@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>App Mr Fitness</title>
+        <link rel="stylesheet" href="assets/plugins/jquery-mobile/jquery.mobile-1.4.5.min.css" />
+        <script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/plugins/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+        <!--app-->
+        <script type="text/javascript" src="assets/js/function.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header" data-theme="c">
+            <h1>App Mr Fitness</h1>
+        </div>
+        <div data-role="content">
+            <div class="div-widget">
+                <div class="div-widget">
+                    <img src="assets/img/logo.png" style="display: block; margin: 0 auto" />
+                </div>
+                <div data-role="fieldcontain">                    
+                    <input type="text" id="mail" data-clear-btn="true" placeholder="Dirección de Correo Electronico"
+                    value="email.example.com" />
+                </div>
+                <div data-role="fieldcontain">                    
+                    <input type="password" id="password" data-clear-btn="true" placeholder="Contraseña"
+                    value="123456" />
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <span><a href="#recovery-password" data-rel="dialog">application v1.3</a></span>
+                    </div>
+                    <div class="ui-block-b" data-role="controlgroup" data-type="vertical">
+                        <a href="#page2"
+                        data-theme="b"
+                        data-transition="slide"
+                        data-role="button"
+                        data-icon="help"
+                        data-iconpos="top"
+                        >Entrar</a>
+                        <a href="#page2"
+                        data-theme="d"
+                        data-transition="slide"
+                        data-role="button"
+                        data-icon="help"
+                        data-iconpos="top"
+                        >Registrate</a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <!--<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">regresar</button>-->
+            <h1>Mr. Fitness</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page1" 
+                        class="ui-btn ui-btn-icon-left ui-icon-arrow-l" 
+                        data-rel="back">01</a>
+                    </li>
+                    <li><a class="ui-btn-active" href="paginax.html" >02</a></li>
+                    <li><a href="paginax.html" >03</a></li>
+                    <li><a href="paginax.html"  >04</a></li>
+                </ul>
+            </div>
+
+
+            
+        </div>
+        <div data-role="content">
+            <div class="div-widget">
+                <img src="assets/img/mr.fitness.jpg" style="display: block; margin: 0 auto" />
+                <div class="div-widget">
+                    <form name="frm-exercise" id="frm-exercise" action="http://" method="POST">
+                        <select name="exercise" id="exercise" data-native-menu="true">
+                            <option value="0">Seleccione ejercicio</option>
+                            <option value="back">Espalda</option>
+                            <option value="chest">Pecho</option>
+                            <option value="leg">Pierna</option>                            
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-id="pie">
+            <div data-role="controlgroup" data-type="horizontal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" data-rel="back">01</a></li>
+                        <li><a class="ui-btn-active" href="paginax.html" >02</a></li>
+                        <li><a href="paginax.html" class="plus" >03</a></li>
+                        <li><a href="paginax.html" >04</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+
+    </div>
+
+    <!--pages-->
+    <div data-role="page" id="chest">
+        <div data-role="header">
+            <a href="#page2" class="ui-btn ui-btn-icon-left ui-icon-arrow-l"
+            ></a>
+            <!--<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">regresar</button>-->
+            <h1>chest</h1>
+        </div>
+        <div data-role="content">
+            <div class="div-widget">
+                <ul data-role="listview">
+                    <li>Acura</li>
+                    <li>Audi</li>
+                    <li>BMW</li>
+                    <li>Cadillac</li>
+                    <li>Ferrari</li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-id="pie">
+            <div data-role="controlgroup" data-type="horizontal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" data-rel="back">01</a></li>
+                        <li><a class="ui-btn-active" href="paginax.html" >02</a></li>
+                        <li><a href="paginax.html" class="plus" >03</a></li>
+                        <li><a href="paginax.html" >04</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>     
+        
+    </div>
+
+    <div data-role="page" id="back">
+        <div data-role="header">
+            <a href="#page2" class="ui-btn ui-btn-icon-left ui-icon-arrow-l"></a>
+            <!--<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">regresar</button>-->
+            <h1>back</h1>
+        </div>
+        <div data-role="content">
+            content back
+        </div>
+
+        <div data-role="footer" class="ui-bar" data-position="fixed" data-id="pie">
+            <div data-role="controlgroup" data-type="horizontal">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page1" data-rel="back">01</a></li>
+                        <li><a class="ui-btn-active" href="paginax.html" >02</a></li>
+                        <li><a href="paginax.html" class="plus" >03</a></li>
+                        <li><a href="paginax.html" >04</a></li>
+                    </ul>
+                </div>                
+            </div>
+        </div>     
+    </div>
+
+    <div data-role="page" id="leg">
+        <div data-role="header">
+            <a href="#page2" class="ui-btn ui-btn-icon-left ui-icon-arrow-l"></a>
+            <!--<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">regresar</button>-->
+            <h1>leg</h1>
+        </div>
+        lista
+    </div>    
+
+<!-- dialog-->
+    <div data-role="page" id="recovery-password">
+        <div data-role="header">
+            <h1>leg</h1>
+        </div>
+        Recovery password!
+        <a href="#page1" data-role="button" >ok</a>
+        <a href="#page1" data-role="button" data-rel="back">Salir</a>
+    </div>
+
+<script type="text/javascript">
+//alert ('xzzzxxxxxx');
+
+
+$(function(){
+    console.log("function.js");
+
+    //01
+    var exercise = null;
+    var dataStore = [
+    {
+        id : 0,
+        title : 'Ejercicios de Espalda',
+        data : [
+            {
+                id : 0,
+                title : 'Polea tras-nuca',
+                description : "Sentado(a)  en  el   equipo con poleas, se agarra la  barra con los  brazos extendidos (como se muestra en la figura) y luego se hala hacia  abajo por medio de la flexión de ambos brazos, de tal forma que  la barra se acerque o toque el cuello  por  la   parte de atrás.",
+                image : 'assets/img/ejercicios/polea-tras-nuca.jpg',
+            },
+            {
+                id : 1,
+                title : 'Polea al pecho',
+                description : "Sentado(a)  en  el   equipo con poleas con ligera inclinación del cuerpo hacia atrás, se  agarra la barra  con los brazos extendidos (como se  muestra en el dibujo) y luego se hala hacia abajo por medio de la flexión de ambos brazos,  de   tal  forma  que  la  barra se acerque o toque el pecho.",
+                image : 'assets/img/ejercicios/polea-al-pecho.jpg',
+            },
+            {
+                id : 2,
+                title : 'Remo Arrodillado con un Brazo',
+                description : "Coloca tu rodilla y mano sobre un banco y coge una mancuerna con tu otra mano",
+                image : 'assets/img/ejercicios/remo-arrodillado-una-mano.jpg',
+            },
+            {
+                id : 3,
+                title : 'Remo Arrodillado con un Brazo',
+                description : "Coloca tu rodilla y mano sobre un banco y coge una mancuerna con tu otra mano",
+                image : 'assets/img/ejercicios/dominada.jpg',
+            }]
+    },
+    {
+        id : 1,
+        title : 'Ejerccios de Pecho',
+    },
+    {
+        id : 2,
+        title : 'Ejerccios de Piernas',
+    }];
+
+    console.log(dataStore);
+
+    $('#exercise').change(function(){
+
+        var id_item = '#' + $(this).val();
+        if ( $(this).val() == 'back') {
+            exercise = dataStore[0];
+            //location.hash = $(this).val();        
+            //$.mobile.navigate( "#"+$(this).val() );            
+            $.mobile.changePage(id_item);            
+        } else if ($(this).val() == 'chest') {
+            exercise = dataStore[1];          
+            $.mobile.changePage(id_item);
+        } else if ($(this).val() == 'leg') {
+            exercise = dataStore[2];          
+            $.mobile.changePage(id_item);
+        } else {
+            exercise = null;
+        }        
+        $(this).val('0');
+
+
+        // Render pages
+        var page_exercise = $(id_item).children().first();  
+        var title = $(id_item).children().first().children();
+        //title[1].text = 'ssssssssss';
+        //console.log('page_exercise', title[1]);
+        title[1].innerHTML = exercise.title;;
+      
+    });
+
+    
+    
+});    
+</script>
+
+</body>
+</html>
